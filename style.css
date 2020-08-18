@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+}
+
+h2 {
+  margin-top: 40px;
+  padding-left: 77px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 96px;
+  padding: 56px;
+}
+
+.container img {
+  margin: auto;
+  width: 540px;
+}
+
+.container .info h1 {
+  font-size: 6.4em;
+  color: #333;
+}
+
+.container .info p {
+  margin-top: 36px;
+  margin-right: 200px;
+  font-size: 2.4em;
+  color: #4f4f4f;
+}
+
+.container .info a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+  width: 216px;
+  height: 68px;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #333;
+  color: #fff;
+}
+
+.container .info a:hover {
+  background-color: #fff;
+  color: #333;
+  border: 3px solid #333;
+  transition: all 0.3s;
+}
+
+footer {
+  margin: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer a:hover {
+  color: #4f4f4f;
+  transition: all 0.3s;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .container img {
+    width: 450px;
+  }
+
+  .container .info h1 {
+    font-size: 5em;
+  }
+
+  .container .info p {
+    margin-right: 100px;
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .container img {
+    width: 300px;
+  }
+
+  .container .info h1 {
+    font-size: 4.8em;
+  }
+
+  .container .info p {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 425px) {
+  h2 {
+    margin-top: 20px;
+    padding-left: 24px;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 30px;
+    padding: 24px;
+  }
+
+  .container .info p {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container img {
+    width: 280px;
+  }
+
+  .container .info h1 {
+    font-size: 3.8em;
+  }
+
+  .container .info p {
+    font-size: 1.6em;
+  }
+}
